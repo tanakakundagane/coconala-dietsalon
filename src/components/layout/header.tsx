@@ -27,7 +27,6 @@ function NavItem({ label, href, onClick }: NavItemProps) {
   }
 
   if (!isHomePage && href.startsWith("#")) {
-    const sectionId = href.slice(1);
     return (
       <Link
         href={`/${href}`}
